@@ -1,6 +1,6 @@
 # This repository
-  Formerly this repository was a game scripted together with my framework (02/2022 - 10/2022), testing in practice all tools and concepts of this framework. While i wrote this game, i realized that this framework is so complex, buggy, hard to debugging and bad networking performance, then this framework has discontinued.
-  But i think this is a good showcase of my capability to create a more different API, using several roblox functions, optimizing readability and execution performance, and a bit about how i structure my projects and my security knowledge.
+  Formerly this repository was a game scripted together with my framework (02/2022 - 10/2022), testing in practice all tools and concepts of this framework. While i writing this game, i realized that this framework is so complex, buggy, hard to debugging and bad networking performance, then this framework has been discontinued.
+  But i think this is a good demonstration of my ability to create a more different API, using several roblox functions, optimizing readability and execution performance, and a little bit about how i structure my projects and my security knowledge.
 
 # Testing
   Recently i fixing some bugs and finished some mechanics for this game to be played and tested. Since this game requires a few assets, i put the place in this repository, and the published game link here [Roblox Game](https://www.roblox.com/games/3715675497/Skyblock-attempt-3)
