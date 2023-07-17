@@ -1,0 +1,9 @@
+/*_[a-bA-Z0-9]
+
+# Project place file
+/Game.rbxlx
+/build
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock

@@ -1,0 +1,44 @@
+{
+  "name": "Framework Test",
+  "tree": {
+    "$className": "DataModel",
+    
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "$className": "ReplicatedStorage",
+      "$path": "src/Shared",
+      
+      "Assets": { "$className": "Folder", "$ignoreUnknownInstances": true },
+      "RemoteFunction": { "$className": "RemoteFunction" },
+      "ClassesSync": { "$className": "RemoteFunction" },
+      "RemoteEvent": { "$className": "RemoteEvent" },
+      
+      "Client": { "$className": "Folder", "$path": "src/Client" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      
+      "Server": { "$className": "Folder", "$path": "src/Server" },
+      "Loader": {
+        "$className": "Script",
+        "$properties": {
+          "Source": "--// Core\nlocal Package = require(game:GetService(\"ReplicatedStorage\").Package) task.wait()\nlocal Packages = Package.Packages\n\n--// Load\nPackages.Server.Parent = game:GetService(\"ServerScriptService\")\n\nPackage.load(Packages.Server.RemoteObject)\nPackage.load(Packages.Server)\nPackage:start()\n--Packages.Server:Destroy()"
+        }
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        
+        "Loader": {
+          "$className": "LocalScript",
+          "$properties": {
+            "Source": "--// Core\nlocal Package = require(game:GetService(\"ReplicatedStorage\").Package) task.wait()\nlocal Packages = Package.Packages\n\n--// Load\nPackage.load(Packages.Client.ServerObject)\nPackage.load(Packages.Client)\nPackage:start()\n--Packages.Client:Destroy()"
+          }
+        }
+      }
+    }
+  }
+}

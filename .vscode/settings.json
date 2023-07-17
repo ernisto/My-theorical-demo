@@ -1,0 +1,6 @@
+{
+    "robloxLsp.diagnostics.disable": [
+        "undefined-type"
+    ],
+    "discord.enabled": true,
+}
