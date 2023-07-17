@@ -2,5 +2,8 @@
     "robloxLsp.diagnostics.disable": [
         "undefined-type"
     ],
-    "discord.enabled": true,
+    "cSpell.words": [
+        "roblox",
+        "Rojo"
+    ],
 }
