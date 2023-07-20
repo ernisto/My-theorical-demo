@@ -31,7 +31,7 @@ local ServerObject = Package.class("ServerObject")
 :: Package.Class<ServerObject>
 
 --// Consts
-local LOG_REQUESTS = true
+local LOG_REQUESTS = false
 
 --// Vars
 local onServerClassReady = newSignal()
