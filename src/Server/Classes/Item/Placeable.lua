@@ -158,7 +158,7 @@ function Placeable.prototype:_placeTo(surface: Placeable, offset: CFrame|CFrameS
     
     self:_setOwner(nil)
     self:_setStatus(ItemStatus.Placed)
-        .Changed:Once(self._removing, self)
+    .Changed:Once(self._removing, self)
     
     self.client:AddEveryone()
     self:_setState("Surface", surface)
@@ -168,6 +168,7 @@ function Placeable.prototype:_placeTo(surface: Placeable, offset: CFrame|CFrameS
 end
 function Placeable.prototype:_remove()
     
+    self:_setState("Surface", nil)
     self:_disableRootPart()
 end
 

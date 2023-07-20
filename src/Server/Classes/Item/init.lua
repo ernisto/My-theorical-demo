@@ -218,7 +218,7 @@ function Item.prototype:_weldTo(basePart: BasePart, offset: CFrame|CFrameState?)
     _expect(basePart).is("BasePart"):Argument(1, "basePart")
     _expect(offset).is.some("CFrame", "State", "nil"):Argument(2, "offset")
     
-    self:_unweld()
+    if self._weld then self:_unweld() end
     
     local rootPart = self:_enableRootPart()
     local weld = create("Weld", {
